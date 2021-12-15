@@ -1,19 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore.Internal;
-using RestWithASPNETUdemy.Model;
-using RestWithASPNETUdemy.Model.Context;
-using RestWithASPNETUdemy.Repository;
-using System;
+﻿using RestWithASPNETUdemy.Model;
+using RestWithASPNETUdemy.Repository.Generic;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace RestWithASPNETUdemy.Business.Implementations
 {
     public class PersonBusinessImplementation : IPersonBusiness
     {
+        private readonly IRepository<Person> _repository;
 
-        private readonly IPersonRepository _repository;
-
-        public PersonBusinessImplementation(IPersonRepository repository)
+        public PersonBusinessImplementation(IRepository<Person> repository)
         {
             _repository = repository;
         }
@@ -27,7 +22,7 @@ namespace RestWithASPNETUdemy.Business.Implementations
         // Method responsible for returning one person by ID
         public Person FindByID(long id)
         {
-            return _repository.FindByID(id);
+            return _repository.FindById(id);
         }
 
         // Method responsible to crete one new person
