@@ -287,3 +287,5 @@ C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0
 C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.pdb
 C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.genruntimeconfig.cache
 C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.csproj.AssemblyReference.cache
+C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll

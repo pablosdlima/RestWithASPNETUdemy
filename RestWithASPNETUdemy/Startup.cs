@@ -8,6 +8,7 @@ using RestWithASPNETUdemy.Model.Context;
 using RestWithASPNETUdemy.Business;
 using RestWithASPNETUdemy.Business.Implementations;
 using RestWithASPNETUdemy.Repository.Generic;
+using Microsoft.Net.Http.Headers;
 
 namespace RestWithASPNETUdemy
 {
@@ -33,6 +34,14 @@ namespace RestWithASPNETUdemy
             services.AddDbContext<MyContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("MyContext"), builder => //nome da classe context
                     builder.MigrationsAssembly("MyContext")));
+
+            services.AddMvc(options => //permite que a api devolva xml na requisição.
+            {
+                options.RespectBrowserAcceptHeader = true;
+
+                options.FormatterMappings.SetMediaTypeMappingForFormat("xml", MediaTypeHeaderValue.Parse("application/xml"));
+                options.FormatterMappings.SetMediaTypeMappingForFormat("json", MediaTypeHeaderValue.Parse("application/json"));
+            }).AddXmlDataContractSerializerFormatters();
 
             //Versioning API
             services.AddApiVersioning();
