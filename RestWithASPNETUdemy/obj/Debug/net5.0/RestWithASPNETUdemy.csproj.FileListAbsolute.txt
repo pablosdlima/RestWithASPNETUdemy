@@ -286,3 +286,4 @@ C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0
 C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\ref\RestWithASPNETUdemy.dll
 C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.pdb
 C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.genruntimeconfig.cache
+C:\Users\lpablo\Desktop\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.csproj.AssemblyReference.cache
